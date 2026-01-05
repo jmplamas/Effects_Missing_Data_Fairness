@@ -1,0 +1,13 @@
+Dataset,Pattern,Winner_Model,Winner_Imputation,Baseline_Imputation,Mean_Diff,P_Value,Significant,Comment
+Adult,MCAR_15,xgboost,Original (No Imputation),Original (No Imputation),0.0,,False,Winner is Baseline (No test needed)
+Adult,MCAR_35,xgboost,Original (No Imputation),Original (No Imputation),0.0,,False,Winner is Baseline (No test needed)
+Adult,MAR,xgboost,Median,Original (No Imputation),0.00011316590492715939,0.8980381710147323,False,Not Significant
+Adult,Group,xgboost,Original (No Imputation),Original (No Imputation),0.0,,False,Winner is Baseline (No test needed)
+COMPAS,MCAR_15,xgboost,KNN,Original (No Imputation),0.0036499699405635466,0.49151937863889616,False,Not Significant
+COMPAS,MCAR_35,xgboost,MICE,Original (No Imputation),0.018555779862879512,0.004828472440750789,True,Significant
+COMPAS,MAR,xgboost,KNN,Original (No Imputation),0.0004200275719265234,0.9493351339754464,False,Not Significant
+COMPAS,Group,xgboost,MICE,Original (No Imputation),0.0073832858628507525,0.15266572617557328,False,Not Significant
+German,MCAR_15,xgboost,KNN,Original (No Imputation),0.009689353200250217,0.38382500717333246,False,Not Significant
+German,MCAR_35,xgboost,Original (No Imputation),Original (No Imputation),0.0,,False,Winner is Baseline (No test needed)
+German,MAR,xgboost,KNN,Original (No Imputation),0.014024733680757961,0.2501545258113792,False,Not Significant
+German,Group,xgboost,Original (No Imputation),Original (No Imputation),0.0,,False,Winner is Baseline (No test needed)
